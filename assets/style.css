@@ -1,0 +1,256 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: rgb(87, 4, 104);
+  font-family: "Pattaya", sans-serif;
+}
+
+main {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer,
+.header {
+  background-color: #f3f7ba;
+  width: 100%;
+}
+.header {
+  height: 108px;
+  background-image: url(img/cat-paw1.png);
+}
+.footer {
+  background-image: url(img/cat-paw2.png);
+  height: 60px;
+}
+.footer2 {
+  padding-top: 25px;
+  padding-right: 20px;
+  text-align: right;
+  width: 1000px;
+  margin: 0 auto;
+}
+.content {
+  background-color: rgb(251, 238, 253);
+}
+body {
+  background-color: rgb(251, 238, 253);
+  padding: 0;
+  margin: 0;
+  overflow-y: scroll;
+}
+
+/* Меню class="menu" */
+.menu {
+  width: 1000px;
+  margin: 0 auto;
+  font-style: italic;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu ul {
+  list-style-type: none;
+  padding-left: 15px;
+  display: flex;
+  text-decoration: none;
+}
+.menu img {
+  margin-left: 20px;
+  margin-top: 5px;
+}
+.menu a {
+  display: block;
+  margin-left: 20px;
+}
+.menu a:link:hover {
+  color: rgb(42, 2, 61);
+}
+.menu a:visited:hover {
+  color: rgb(153, 43, 204);
+}
+
+/*Заголовки*/
+h1,
+h3 {
+  color: rgb(69, 3, 100);
+  font-family: "Pattaya", sans-serif;
+  text-align: center;
+}
+h3 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/* кр описание class="krop"*/
+.krop {
+  color: #40154e;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 16px;
+}
+
+/* подр описание class="podrop"*/
+.podrop {
+  color: #40154e;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  font-style: italic;
+}
+/* характеристики список class="hrsp"*/
+.hrsp th,
+td {
+  border: 1px double rgb(160, 56, 180);
+  padding: 6px;
+}
+.hrsp th {
+  height: 50px;
+  font-family: fantasy;
+  font-size: 18 px;
+  color: #240557;
+}
+.hrsp td {
+  color: #40154e;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* легенда class="legend"*/
+.legend {
+  font-style: italic;
+  color: #40154e;
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.krop::first-letter,
+.podrop::first-letter,
+.legend::first-letter {
+  color: rgb(160, 56, 180);
+  font-size: 24px;
+  font-weight: bolder;
+  font-family: "Times New Roman", Times, serif;
+}
+.tovar {
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.tovar {
+  display: flex;
+  align-items: bottom;
+}
+.tovar a {
+  height: 300px;
+}
+.krop2 {
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+.buy {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: #40154e;
+  font-size: 18px;
+  border: 2px solid rgb(160, 56, 180);
+  background-color: #f3f7ba;
+  padding: 5px 15px;
+}
+.buy:hover {
+  background-color: rgb(233, 201, 243);
+}
+.buy:active {
+  background-color: rgb(160, 56, 180);
+  color: #f3f7ba;
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.1);
+}
+
+/* контакты*/
+form {
+  font-family: "Pattaya", sans-serif;
+  width: 1000px;
+  padding: 16px;
+  background-color: rgba(169, 122, 184, 0.486);
+}
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+::placeholder {
+  font-style: italic;
+}
+input,
+textarea {
+  font-style: italic;
+  color: #6214bb;
+  font-size: 14px;
+  font-family: "Pattaya", sans-serif;
+}
+textarea {
+  width: 100%;
+}
+input,
+textarea {
+  text-transform: capitalize;
+}
+.email:focus {
+  color: #22083f;
+  background-color: #f3f7ba;
+}
+.map {
+  width: 100%;
+}
+.map > iframe {
+  border: 3px inset rgb(160, 56, 180);
+}
+
+/*каталог*/
+.staff {
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.imgc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 0 33.33%;
+  text-align: center;
+}
+.imgc img {
+  margin-bottom: 15px;
+  outline: 2px inset rgb(160, 56, 180);
+}
+
+a img {
+  outline: 6px inset rgb(160, 56, 180);
+}
+a img:hover {
+  outline: none;
+}
+.img {
+  outline: 4px inset rgb(160, 56, 180);
+}
