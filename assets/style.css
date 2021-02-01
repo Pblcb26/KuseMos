@@ -119,7 +119,7 @@ td {
 .hrsp th {
   height: 50px;
   font-family: fantasy;
-  font-size: 18 px;
+  font-size: 18px;
   color: #240557;
 }
 .hrsp td {
@@ -152,7 +152,6 @@ td {
 }
 .tovar {
   display: flex;
-  align-items: bottom;
 }
 .tovar a {
   height: 300px;
